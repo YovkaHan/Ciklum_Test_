@@ -1,0 +1,58 @@
+.oculus {
+  .oculus_1 , .oculus_2 , .oculus_3{
+    overflow: hidden;
+    background: #282828;
+  }
+  h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+    text-align: center;
+  }
+  h4 {
+    color: #a4a5a6;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 16px;
+    margin: 0;
+    text-align: center;
+  }
+  a, a:hover, a:visited {
+    text-decoration: none;
+    display: block;
+	width: auto;
+  }
+  .image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    opacity: .3;
+    transition: transform .3s, opacity .3s;
+    text-align: center;
+    width: 100%;
+  }
+  .oculus_1:hover .image {
+    opacity: .8;
+    transform: scale(1.1, 1.1);
+  }
+  .oculus_2:hover .image {
+    opacity: .8;
+    transform: scale(1.1, 1.1);
+  }
+  .oculus_3:hover .image {
+    opacity: .8;
+    transform: scale(1.1, 1.1);
+  }
+}
+.image_text {
+  box-sizing: border-box;
+  padding: 0 32px;
+  position: absolute;
+  top: 49%;
+  transform: translate(0, -50%);
+  width: 100%;
+}
