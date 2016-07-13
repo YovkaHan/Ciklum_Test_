@@ -24,22 +24,21 @@ signup_name.keyup(function() {
     d += a.attributes.href.nodeValue, a.attributes.href.nodeValue = d
 });
 
-$('#signup_form').click(function() {
-  if (signup_name.val() = "") {
-	  signup_name.addClass("error")
-  }
-});
-
-$('#signup_form').submit(function() {
-    // get all the inputs into an array.
-    var $inputs = $('#signup_form :input');
-
-    $inputs.each(function(e) {
+ $('#signup_form').on('submit', function(e){
+ var $inputs = $('form#signup_form input[type="text"],form#signup_form input[type="password"]');
+	var notPrevent = false;
+	$inputs.each(function() {
         if($(this).val()=="")
 		{
 			$(this).addClass("error");
-			e.preventDefault();
+			notPrevent = true;
 		}
-    });
-
-});
+		else if($(this).val()!="" && $(this).hasClass("error"))
+		{
+			removeClass("error");
+		}
+	})
+    if(notPrevent) {
+      e.preventDefault();
+    }
+  });
