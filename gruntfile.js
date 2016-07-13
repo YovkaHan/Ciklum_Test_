@@ -4,6 +4,7 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
+					'css/base.css' : 'scss/base.scss',
 					'css/microsoft_nav.css' : 'scss/microsoft_nav.scss',
 					'css/drop_box_hero.css' : 'scss/drop_box_hero.scss',
 					'css/invision_signin.css' : 'scss/invision_signin.scss',
@@ -15,7 +16,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			foo: {
 				files: {
-					'css/main.min.css' : ['css/microsoft_nav.css', 'css/drop_box_hero.css', 'css/invision_signin.css', 'css/oculus_div.css', 'css/apple_footer.css']
+					'css/main.min.css' : ['css/base.css', 'css/microsoft_nav.css', 'css/drop_box_hero.css', 'css/invision_signin.css', 'css/oculus_div.css', 'css/apple_footer.css']
 				}
 			}
 		},
