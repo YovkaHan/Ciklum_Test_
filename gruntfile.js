@@ -20,13 +20,21 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		uncss: {
+			dist: {
+				files : {
+						'css/main.min.css' : 'index.html'
+				}
+			}
+		},
 		watch: {
 			css: {
 				files: '**/*.scss',
 				tasks: ['sass', 'cssmin:foo']
 			}
-		}
+		} 
 	});
+	grunt.loadNpmTasks('grunt-uncss');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');

@@ -74,5 +74,8 @@
   font-size: 18px; }
 .dark-blue form input:focus {
   outline: none; }
+.dark-blue form input.error[type="text"], .dark-blue form input.error[type="email"], .dark-blue form input.error[type="password"] {
+  border-color: #ff3366;
+  box-shadow: 0 0 0 1px #ff3366; }
 
 /*# sourceMappingURL=invision_signin.css.map */

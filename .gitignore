@@ -84,3 +84,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 .sass-cache
+node_serv.js

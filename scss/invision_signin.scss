@@ -93,6 +93,10 @@
     input:focus{
       outline: none;
     }
+	input.error[type="text"], input.error[type="email"], input.error[type="password"] {
+		border-color: #ff3366;
+		box-shadow: 0 0 0 1px #ff3366;
+	}
   }
 
 }
