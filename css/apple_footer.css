@@ -1155,6 +1155,8 @@
     padding: 0;
     float: left;
     width: 25%; }
+    #ac-globalfooter .ac-gf-directory-column label {
+      display: inline; }
   #ac-globalfooter .ac-gf-directory-column-section {
     width: 100%;
     position: relative;
@@ -1799,7 +1801,7 @@
   #ac-globalfooter .ac-gf-directory-column-section-link {
     outline-offset: -6px;
     padding: 0 14px;
-    display: block; }
+    display: inline; }
   #ac-globalfooter .ac-gf-directory-column-section-anchor {
     display: block; }
   #ac-globalfooter .ac-gf-directory-column-section-state:target + .ac-gf-directory-column-section .ac-gf-directory-column-section-title {

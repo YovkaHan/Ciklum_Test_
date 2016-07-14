@@ -1633,6 +1633,10 @@
 		padding: 0;
 		float: left;
 		width: 25%;
+		
+		label {
+			display: inline;
+		}
 	}
 	.ac-gf-directory-column-section {
 		width: 100%;
@@ -2591,7 +2595,7 @@
 		.ac-gf-directory-column-section-link {
 			outline-offset: -6px;
 			padding: 0 14px;
-			display: block;
+			display: inline;
 		}
 		.ac-gf-directory-column-section-anchor {
 			display: block;
